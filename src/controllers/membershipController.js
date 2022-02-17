@@ -22,10 +22,10 @@ async function membershipPost(req, res) {
   successResponce(res, data);
 }
 async function membershipDelete(req, res) {
-  const id = req.params._id;
+  const id = req.params.id;
   const result = await membershipDeleteDb(id);
   if (result === false) {
-    return failResponce(res);
+    return failResponce(res, 500);
   }
   successResponce(res, result);
 }

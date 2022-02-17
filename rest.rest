@@ -9,7 +9,7 @@ Content-Type: application/json
    "description":"This is 60 days basic membership"
 }
 ###
-DELETE http://localhost:3000/memberships/620b86c36ba8b31818673f94
+DELETE http://localhost:3000/memberships/620b8908c20c1712a7bfb213
 ###
 http://localhost:3000/users/1
 ###

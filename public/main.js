@@ -1,10 +1,10 @@
 async function forDeletion() {
-  const idValue = event.target.dataset.id;
+  const idValue = event.target.dataset.id; //className
   console.log(idValue);
   await fetch(`http://localhost:3000/memberships/${idValue}`, {
     method: 'DELETE',
   });
-  makeCards();
+  location.reload();
 }
 
 function makeCards() {
@@ -23,7 +23,8 @@ function makeCards() {
         divForText.setAttribute('class', 'priceName');
         card.append(divForText);
         const price = document.createElement('span');
-        price.innerHTML = `$${oneMembership.price.toFixed(2)} `;
+        console.log('this is the value of one membership', oneMembership);
+        price.innerHTML = `$${oneMembership?.price?.toFixed(2)} `;
         const name = document.createElement('span');
         name.innerHTML = oneMembership.name;
         const description = document.createElement('p');
