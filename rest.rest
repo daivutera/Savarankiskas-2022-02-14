@@ -1,0 +1,27 @@
+http://localhost:3000/memberships
+###
+POST http://localhost:3000/memberships/post
+Content-Type: application/json
+
+{
+    "price":69.99,
+   "name":"Extra",
+   "description":"This is 60 days basic membership"
+}
+###
+DELETE http://localhost:3000/memberships/620b86c36ba8b31818673f94
+###
+http://localhost:3000/users/1
+###
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "name": "Chavier",
+    "surname": "Rudd",
+    "email": "Rudd@gmail.com",
+    "serviceId": "Trial",
+    "IP": "142.12.76.11"
+
+}

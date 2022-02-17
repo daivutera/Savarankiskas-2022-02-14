@@ -1,0 +1,72 @@
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'); ikonelei */
+
+body {
+  background-color: rgb(224, 232, 240);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: white;
+  height: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  margin-bottom: -1.8rem;
+}
+a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+main {
+  background-color: rgb(224, 232, 240);
+  padding-left: 3rem;
+  height: 38rem;
+}
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+#wrapper {
+  width: 50rem;
+}
+#newMembership {
+  height: 2rem;
+  background-color: rgb(90, 69, 187);
+  padding: 1rem, 1rem;
+  margin: 3rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+footer {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+.card {
+  background-color: white;
+  height: 9rem;
+  width: 12rem;
+  margin: 1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.forCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.forTrash {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+.priceName {
+  font-weight: 700;
+}
+.description {
+  font-size: 15px;
+  color: rgb(66, 63, 63);
+}
