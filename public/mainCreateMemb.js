@@ -18,7 +18,4 @@ document.querySelector('#newMembership').addEventListener('click', (event) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(dataToSend),
   });
-  // .then((resp) => resp.text())
-  // .then((dataBack) => console.log(dataBack))
-  // .catch((err) => console.warn(err))
 });

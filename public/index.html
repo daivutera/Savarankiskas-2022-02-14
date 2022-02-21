@@ -10,20 +10,19 @@
 </head>
 <body>
     <header>
-        <a href="#">Memberships</a>
-        <a href="#">Users</a>
+        <a href="./index.html">Memberships</a>
+        <a href="./userManagement.html">Users</a>
     </header>
     <main>
         <div id="top">
             <div id="wrapper"><h1>Membership Management</h1>
                 <p>Here you can manage your membership packages. Make sure you are not deleting or deactivating packages assigned to active users.</p>
             </div>
-            <button id="newMembership">+ New Membership</button>
+            <button id="newMembership" onclick="document.location='./createMembership.html'">+ New Membership</button>
         </div>
-        <div id="trash"></div>
-
-        
+        <h1 id='loading'></h1>
     </main>
+    
     <Footer>Copyright @2022 Membership Manager</Footer>
 </body>
 </html>

@@ -9,14 +9,23 @@
     <script src="mainCreateMemb.js"defer></script>
 </head>
 <body>
+    <header>
+        <a href="./index.html">Memberships</a>
+        <a href="./userManagement.html">Users</a>
+    </header>
     <h1 id="createMembershipH1">Create Membership</h1>
     <div id="createMembership">
         <form id="createMembershipForm"></form>
-            <legend>Name</legend><input class="membership" id="fieldName" type="text" name="fName" id="" placeholder="name"><br>
-            <legend>Membership Price</legend><input class="membership" id="fieldPrice" type="number" name="fPrice" id="" placeholder="Membership Price"><br>
-            <legend>Description</legend><input class="membership" id="fieldDescription" type="text" name="fDescription" id=""><br>
+            <legend class="member-legend">Name</legend>
+            <input class="membership" id="fieldName" type="text" name="fName" id="" placeholder="name"><br>
+            <div id="fordoller">
+                <legend class="member-legend">Membership Price</legend>
+                <input class="membership" id="fieldPrice" type="number" name="fPrice" id="" placeholder="Membership Price"><br>
+            </div>
+            <legend class="member-legend">Description</legend>
+            <input class="membership" id="fieldDescription" type="text" name="fDescription" id=""><br>
             <div class="buttons">
-        <Button id="cancel">Cancel</Button><Button type="submit"id="newMembership">New Membership</Button></div>
+        <button type="button"id="cancel" onclick="document.location='./index.html';">Cancel</button><button type="submit"id="newMembership">New Membership</button></div>
         </form>
     </div>
 

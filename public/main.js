@@ -4,13 +4,16 @@ async function forDeletion() {
   await fetch(`http://localhost:3000/memberships/${idValue}`, {
     method: 'DELETE',
   });
-  location.reload();
+  document.querySelector('.forCards').innerHTML = '';
+  makeCards();
 }
 
 function makeCards() {
+  document.querySelector('#loading').innerHTML = 'Loading...';
   fetch('http://localhost:3000/memberships')
     .then((res) => res.json())
     .then((data) => {
+      document.querySelector('#loading').innerHTML = '';
       const divForCards = document.createElement('div');
       divForCards.setAttribute('class', 'forCards');
       const placeForContent = document.querySelector('#top');

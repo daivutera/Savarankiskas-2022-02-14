@@ -10,7 +10,8 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-    }
-    "linebreak-style": ["off", "unix"],
+        "linebreak-style": ["off", "unix"],
         "no-console": "off"
+    }
+    
 }

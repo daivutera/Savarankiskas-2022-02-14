@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="newUser.js"defer></script>
+</head>
+<body>
+    <header id="user-man">
+        <a href="./index.html">Memberships</a>
+        <a href="./userManagement.html">Users</a>
+    </header>
+    <div>
+        <h1 id="cr-user">Create User</h1>
+    <div id="create-user">
+        <form id="new-user">
+            <div id="input-flex">
+                <div>
+                    <legend class="users-legend">First Name <span class="star">⋆</span></legend>
+                    <input class="users-input" type="text" name="name" id="user-name">
+                </div>
+             <div id="for-margin">
+                <legend class="users-legend">Last Name <span class="star">⋆</span></legend>
+                <input class="users-input" type="text" name="surname" id="user-surname">
+             </div>
+            </div>
+            <legend class="users-legend">Email Address <span class="star">⋆</span></legend>
+            <input class="users-input" type="email" name="email" id="user-email">
+            <legend class="users-legend"><label for="memberships">Change Membership</label></legend>
+            <select name="memberships" id="select-membership">
+              <!-- <option value="Platinum">Platinum</option>
+              <option value="Trial">Trial</option>
+              <option value="Silver">Silver</option>
+              <option value="Gold">Gold</option>
+              <option value="Extra">Extra</option> -->
+            </select>
+            <div id="buttons-flex">
+                <button type="button"id="invisible-background" onclick="document.location='./userManagement.html'">Cancel</button>
+                <button id="user-button">New User</button>
+            </div>
+        </form>
+        <h2 id="success-message"></h2>
+    </div>
+</div>
+<Footer>Copyright @2022 Membership Manager</Footer>
+</body>
+</html>
